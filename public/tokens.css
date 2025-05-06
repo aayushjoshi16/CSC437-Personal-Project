@@ -1,0 +1,21 @@
+:root {
+    --color-background: #F0CE7D;
+    --color-text: #89620d;
+    --color-nav-background: #aea084;
+    --color-nav-text: #0f5070;
+    --color-heading: #a631c3;
+    --color-link: #0092ac;    
+    --font-primary: 'Underdog', sans-serif;
+    --font-heading: 'Exo 2', sans-serif;
+    --spacing-unit: 1.5em;
+}
+
+/* Dark mode color overrides */
+body.dark-mode {
+    --color-background: #202040;
+    --color-text: #e0cd9e;
+    --color-nav-background: #404055;
+    --color-nav-text: #a0d0ff;
+    --color-heading: #e09fff;
+    --color-link: #5dc0db;
+}

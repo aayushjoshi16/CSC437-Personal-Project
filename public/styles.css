@@ -1,0 +1,101 @@
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-heading);
+  background-color: var(--color-nav-background);
+  color: var(--color-nav-text);
+  gap: var(--spacing-unit);
+  margin-bottom: var(--spacing-unit);
+  padding: var(--spacing-unit);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-unit);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--spacing-unit);
+}
+
+@media (max-width: 600px) {
+  nav {
+    align-items: flex-start;
+  }
+
+  .nav-left {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: var(--spacing-unit);
+  }
+}
+
+nav a {
+  color: var(--color-nav-text);
+  background-color: var(--color-nav-background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav h1, .nav-left, .nav-links, .dark-mode-container, .nav-right {
+  font-family: var(--font-heading);
+  background-color: var(--color-nav-background);
+  color: var(--color-nav-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+  font-family: var(--font-primary);
+  color: var(--color-heading);
+  transition: color 0.3s ease;
+}
+
+a {
+  color: var(--color-link);
+  transition: color 0.3s ease;
+}
+
+#dark-mode-toggle {
+  background-color: transparent;
+  accent-color: var(--color-link);
+}
+
+input[type="checkbox"] {
+  appearance: auto;
+}
+
+.dark-mode-label {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2, p, dl, dt, dd {
+  background-color: var(--color-background);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
